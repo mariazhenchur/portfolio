@@ -13,7 +13,7 @@ export default function About({ isVisible }) {
                     <a href="mailto:mariazhenchur@gmail.com" className={styles.contactButton}>
                         <Mail className={styles.buttonIcon} /> Contact Me
                     </a>
-                    <a href="/MariiaZhenchurCV.pdf" download="MariiaZhenchurCV.pdf" className={styles.cvButton}>
+                    <a href={`${process.env.PUBLIC_URL}/MariiaZhenchurCV.pdf`} download="MariiaZhenchurCV.pdf" className={styles.cvButton}>
                         <ExternalLink className={styles.buttonIcon} /> Download CV
                     </a>
                 </div>
