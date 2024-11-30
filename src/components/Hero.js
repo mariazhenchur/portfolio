@@ -8,9 +8,18 @@ export default function Hero() {
                 <h1 className={styles.title}>Mariia Zhenchur</h1>
                 <p className={styles.subtitle}>WebUI Software Engineer (React + Node.js)</p>
                 <div className={styles.icons}>
-                    {[Github, Linkedin, Mail].map((Icon, index) => (
-                        <a key={index} href="#" className={styles.iconLink}>
-                            <Icon className={styles.icon} />
+                    {[{
+                        href: 'https://github.com/mariazhenchur', 
+                        Icon: Github
+                    }, {
+                        href: 'https://www.linkedin.com/in/mariia-zhenchur-286a80296/', 
+                        Icon: Linkedin
+                    }, {
+                        href: 'mailto:mariazhenchur@gmail.com', 
+                        Icon: Mail
+                    }].map((item, index) => (
+                        <a key={index} href={item.href} className={styles.iconLink} target="_blank" rel="noopener noreferrer">
+                            <item.Icon className={styles.icon} />
                         </a>
                     ))}
                 </div>
