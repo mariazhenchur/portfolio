@@ -1,0 +1,42 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.title {
+    font-size: 3rem;
+    color: #fff;
+    animation: slide-down 1s ease;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #ddd;
+    animation: slide-down 1s ease;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.iconLink, .arrowLink {
+    color: #ccb9b9;
+    padding: 10px;
+    animation: slide-down 1s ease;
+}
+
+
+.content {
+    text-align: center;
+}
