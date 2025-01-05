@@ -3,8 +3,15 @@ import project2 from './assets/images/project2.png';
 import project3 from './assets/images/project3.png';
 import project4 from './assets/images/project4.png';
 import project5 from './assets/images/project5.png';
+import project6 from './assets/images/medicine.jpg'
 
 const projectData = [
+    {
+        title: 'Medicine Tracker',
+        description: 'Medicine Tracker web application that allows users to view, search, and manage medicine details, including dose and quantity, adding and deleting medicines with a user-friendly interface.',
+        tech: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Vercel'],
+        image: project6,
+    },
     {
         title: 'Music Studio Website',
         description: 'Music Studio Website showcasing recording, mixing, and production services. It features smooth animations, a booking button, and easy navigation to the contact section.',
